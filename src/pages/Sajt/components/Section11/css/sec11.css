@@ -1,0 +1,25 @@
+.section-9{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),
+    url("pictures/sec-9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+.section-9-header{
+    font-size: 7rem;
+    font-weight: 900;
+    margin-bottom: 4rem;
+    color: white;
+}
+.section-9-paragraph{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: white;
+}

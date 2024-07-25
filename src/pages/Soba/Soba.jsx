@@ -1,9 +1,9 @@
 
 import "../../index.css";
-import * as THREE from 'three';
-import { useState, useEffect, useRef } from 'react';
-import { useFrame, useLoader } from '@react-three/fiber'
-import { useGLTF, useTexture } from '@react-three/drei';
+
+import { useState, useRef } from 'react';
+
+import { useGLTF } from '@react-three/drei';
 import { easing } from 'maath';
 import Lopte from './components/Lopte';
 import LopteSto from './components/LopteSto';
@@ -39,7 +39,7 @@ import { OrbitControls, Environment } from "@react-three/drei";
 function Soba(props) {
 
   // const buffer = useLoader(THREE.AudioLoader, "music/Where The Hood At.mp3");
-  const [count, setCount] = useState(0);
+
   const { nodes, materials } = useGLTF('/ent.glb');
 
   const [paintChair, setPaintChair] = useState("#e6e6e6");
@@ -53,11 +53,7 @@ function Soba(props) {
 
 
   const mainRef = useRef();
-  const lightRef = useRef();
-  // const sphereRef = useRef();
-
-  const [target, setTarget] = useState();
-  // useHelper(lightRef, DirectionalLightHelper, 2, "red");
+  
 
   // useFrame((state, delta) => {
 
@@ -66,14 +62,6 @@ function Soba(props) {
   //   easing.dampE(mainRef.current.rotation, clicked ? [0.1, -2.5, 0] : [0.1, Math.PI, 0], 0.5, delta)
   //   easing.damp3(mainRef.current.position, clicked ? [0, 0, 1.5] : [-1, -0.5, -0.5], 0.25, delta)
   // })
-
-
-  useEffect(() => {
-
-    // if (sphereRef.current) {
-    //   setTarget(sphereRef.current);
-    // }
-  }, []);
 
 
   return (

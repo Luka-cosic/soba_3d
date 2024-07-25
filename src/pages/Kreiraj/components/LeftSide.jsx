@@ -1,6 +1,6 @@
-import { OrbitControls, useHelper } from "@react-three/drei";
-import { Canvas, useLoader  } from "@react-three/fiber";
-import { useRef, useState, useMemo, Suspense, useEffect } from "react";
+import { OrbitControls } from "@react-three/drei";
+import { Canvas  } from "@react-three/fiber";
+import { useRef, Suspense } from "react";
 import Floor from '../Floor';
 import Kuca1 from "./Kuca1";
 import Kuca2 from "./Kuca2";
@@ -11,7 +11,7 @@ const LeftSide = ({ count, bojaKrova, bojaZida, isMapRoof, isMapFrontBack }) => 
 
     function Lights() {
         const light = useRef();
-        // useHelper(light, SpotLightHelper, 'cyan')
+        
         return <spotLight ref={light} args={["#fff", 8, 10, 1]} position={[-0.5, 1.5, -2]} castShadow />
     }
 

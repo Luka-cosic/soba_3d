@@ -1,0 +1,102 @@
+.section-11{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    background-color: #f2f2f2;
+}
+.section-11-first{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-11-text{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.section-11-header{
+    font-size:6rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+.section-11-subtitle{
+    font-size: 2rem;
+    color: #808080;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.section-11-paragraph{
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+.input-wrapper{
+    width: 100%;
+    display: flex;
+}
+.input{
+    width: 70%;
+    position: relative;
+    margin-right: 1rem;
+}
+.email-input{
+    width: 100%;
+    height: 4rem;
+    border: none;
+    border-bottom: 2px solid #666666;
+    padding-left: 0.2rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.line-wrapper{
+    width: 100%;
+    height: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -0.1rem;
+}
+.input-line{
+    width: 0;
+    height: 100%;
+    background-color: red;
+    transition: width 0.3s;
+}
+.email-input:focus ~ .line-wrapper > .input-line{
+    width: 100%;
+}
+::placeholder{
+    font-size: 1.5rem;
+    color: black;
+}
+.submit-btn{
+    width: 30%;
+    background-color: red;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.1rem;
+    border: none;
+    box-shadow: 0.1rem 0.1rem 0.1rem red;
+    cursor: pointer;
+}
+.section-11-second{
+    width: 50%;
+    height: 100%;
+}
+.sec-11-img-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.sec-11-img{
+    width: 100%;
+    height: 100%;
+}

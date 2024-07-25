@@ -40,7 +40,7 @@
       cursor: pointer;
       display: inline-block;
       font-family: -apple-system, sans-serif;
-      font-size: 1.2rem;
+      font-size: 2rem;
       font-weight: 700;
       letter-spacing: -.24px;
       margin: 0;
@@ -85,3 +85,14 @@
     box-shadow: none;
   }
   
+
+  /* Sajt */
+  .other{
+    position: relative;
+    top: 27vh;
+    transition: top 0.5s;
+}
+.change ~ .other{
+    top: 5vh;
+}
+  /* End of Sajt */

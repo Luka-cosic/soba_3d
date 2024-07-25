@@ -1,18 +1,15 @@
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import { useGLTF } from "@react-three/drei";
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import { useRef } from "react";
 
+import { useGLTF } from "@react-three/drei";
+import {  useFrame} from "@react-three/fiber";
+import { useRef } from "react";
 
 
 const Kuca2 = (props) => {
     
-    // const kuca2 = useLoader(GLTFLoader, './kuca2/kucica22.glb');
     const { nodes, materials } = useGLTF('Kreiraj/kuca2/kucica22.glb');
     const kucaRef = useRef();
    
  useFrame((_, delta) => {
-    //  kucaRef.current.rotation.x += delta
     kucaRef.current.rotation.y += 0.5 * delta
   })
     return (

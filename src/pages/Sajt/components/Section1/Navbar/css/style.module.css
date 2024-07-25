@@ -1,0 +1,39 @@
+.navbar{
+    width: 100%;
+    height: 7vh;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu_list{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu_link{
+    font-size: 1.6rem;
+    color: #404040;
+    font-weight: 400;
+    transition: color 0.5s;
+}
+.menu_link:hover{
+    color: red;
+    
+}
+.media_link{
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    color: #404040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s;
+}
+.media_link:hover{
+    background-color: #b30000;
+
+    
+}

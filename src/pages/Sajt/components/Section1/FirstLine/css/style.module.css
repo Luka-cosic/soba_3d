@@ -1,0 +1,14 @@
+.first_line{
+    width: 100%;
+    height: 5vh;
+    background-color:#404040;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first_line_header{
+    font-size: 1.8rem;
+    font-weight: 300;
+}

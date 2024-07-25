@@ -1,15 +1,20 @@
 import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
+import { useNavigate } from "react-router-dom";
 
 const SajtDug = ({nodes}) => {
-    const sajtRef = useRef(null)
+    const sajtRef = useRef(null);
+    const navigate = useNavigate();
+    const handleClick = ()=>{
+        navigate("/sajt");
+
+    }
     useFrame((_, delta) => {
-       
         sajtRef.current.rotation.y += 0.5 * delta
     })
     return (
         <>
-        <group ref={sajtRef}>
+        <group ref={sajtRef} onClick={handleClick}>
             <mesh geometry={nodes.Text002.geometry} material={nodes.Text002.material} position={[-1.514, 1.316, -0.18]} rotation={[Math.PI / 2, 0, 0]} scale={0.423} >
                 <meshBasicMaterial color="white" />
             </mesh>

@@ -1,0 +1,69 @@
+.section-5{
+    width: 100%;
+    height: 73vh;
+    position: relative;
+    overflow: hidden;
+}
+.section-5-picture-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    transition: left 1s;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: black;
+}
+.picture-heading{
+    position: absolute;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.picture-name{
+    font-size: 7rem;
+    color: white;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+.picture-button{
+    width: 20rem;
+    height: 5rem;
+    background-color: white;
+    border: none;
+    font-size: 2rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.picture-button:hover{
+    border: 0.3rem solid white;
+    background-color: transparent;
+    color: white;
+}
+.section-5-picture{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.pagination{
+    width: 15rem;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3rem;
+    justify-content: space-evenly;
+}
+.circle{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: 	 #808080;
+}
+.circle:nth-child(3){
+    background-color: white;
+}

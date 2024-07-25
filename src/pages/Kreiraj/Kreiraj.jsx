@@ -1,13 +1,10 @@
 
-
 import { useState } from "react";
-import { useLoader } from "@react-three/fiber";
-import { TextureLoader } from 'three/src/loaders/TextureLoader';
 import '../../App.css';
 import RightSide from "./components/RightSide";
 import LeftSide from "./components/LeftSide";
 import { grabMaterial } from "./JS/index.js";
-import { roof_1, front_back_1, roof_2, front_back_2, roof_3, front_back_3 } from "./config/constans.js";
+import { roof_1, front_back_1 } from "./config/constans.js";
 
 
 const Kreiraj = () => {

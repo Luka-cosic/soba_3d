@@ -1,0 +1,113 @@
+.section-12{
+    width: 100%;
+    height: 83vh;
+}
+.sec12First{
+    width: 100%;
+    height: 75%;
+    background-color: #000;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-bottom: 10rem;
+}
+.sec12Location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+.sec12Header{
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+.sec12Paragraph{
+    font-size: 2rem;
+    color: white;
+}
+
+.sec12Hours{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+.hours1{
+    margin-bottom: 3rem;
+}
+
+.sec12FindUs{
+    margin-top: 10rem;
+}
+.sec12SocialMe{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+.media-link-last{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s;
+}
+.media-link-last:hover{
+    background-color: white;
+}
+.last-media{
+    font-size: 3rem;
+    color: white;
+    transition: color 0.5s;
+}
+.media-link-last:hover .last-media{
+    color: #000;
+}
+.ourPhone{
+    margin-bottom: 2rem;
+}
+.ourMail{
+    font-size: 2rem;
+    color: white;
+    border-bottom: none;
+    transition: all 0.5s;
+}
+.ourMail:hover{
+    color: #b30000;
+    text-decoration: underline;
+}
+
+.sec12RedLine{
+    width:100%;
+    height: 0.2rem;
+    background-color: #b30000;
+}
+
+.sec12Second{
+    width: 100%;
+    height: 29%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+.sec12LogoHolder{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.logo-paragraph{
+    font-size: 2rem;
+    color: white;
+}
+.logoImg{
+    width: 20rem;
+}
+.last-link{
+    color: white;
+    font-size: 2rem;
+    text-decoration: underline;
+}

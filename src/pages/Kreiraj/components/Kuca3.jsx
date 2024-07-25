@@ -1,24 +1,12 @@
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import { OrbitControls, useGLTF, useCubeTexture, useTexture } from "@react-three/drei";
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import { TextureLoader } from 'three/src/loaders/TextureLoader';
-import { useRef, useEffect } from "react";
-// import { front_back_3 } from "../config/constans.js";
+import { useFrame } from "@react-three/fiber";
+import {  useGLTF } from "@react-three/drei";
 
-
-
+import { useRef } from "react";
 
 
 const Kuca3 = (props) => {
     
-   
-    // front_back_3[0].color = frontMap
-    // frontMap.flipY = false;
-    // frontMap.encoding = THREE.sRGBEncoding;
-
     const kucaRef = useRef();
-
-
     const { nodes, materials } = useGLTF('Kreiraj/kuca3/kuca.glb');
 
     useFrame((_, delta) => {
