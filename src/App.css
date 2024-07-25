@@ -2,3 +2,86 @@
     width: 100vw;
     height: 100vh;
 }
+.kreiraj{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: red; */
+  
+    display: flex;
+  }
+  .leftHalf{
+    width: 50vw;
+  }
+  .rightHalf{
+    width: 50vw;
+    height: 100vh;
+  }
+  .group{
+    border: 1px solid black;
+  }
+  
+  .bootonsHolder{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+   transform: translate(20%, -80vh);
+   
+    
+  }
+  
+  .dugmici{
+    appearance: none;
+      background-color: #FFFFFF;
+      border-radius: 40em;
+      border-style: none;
+      box-shadow: #ADCFFF 0 -12px 6px inset;
+      box-sizing: border-box;
+      color: #000000;
+      cursor: pointer;
+      display: inline-block;
+      font-family: -apple-system, sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -.24px;
+      margin: 0;
+      outline: none;
+      padding: 1rem 1.3rem;
+      quotes: auto;
+      text-align: center;
+      text-decoration: none;
+      transition: all .15s;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+  }
+  .active{
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+  }
+  .dug {
+    transition: all 0.5s;
+    font-size: 17px;
+    padding: 1ch 2ch;
+    background-color: white;
+    color: #000;
+    font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 0px hsl(0, 0%, 90%),
+      4px 4px 0px hsl(0, 0%, 80%),
+      6px 6px 0px hsl(0, 0%, 70%),
+      8px 8px 0px hsl(0, 0%, 60%),
+      10px 10px 0px hsl(0, 0%, 50%),
+      12px 12px 0px hsl(0, 0%, 40%),
+      14px 14px 0px hsl(0, 0%, 30%),
+      16px 16px 0px hsl(0, 0%, 20%),
+      18px 18px 0px hsl(0, 0%, 10%);
+  }
+  
+  .dug:hover {
+    background-color: hsl(0, 0%, 50%);
+    color: #fff;
+    box-shadow: none;
+  }
+  
