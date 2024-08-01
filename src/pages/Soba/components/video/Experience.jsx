@@ -10,7 +10,7 @@ const Experience = () => {
     <group>
       <Plane position={[3.05,-1.05,-1.91]} args={[1.8, 0.9]} rotation={[0,1.66,0]} >
         <Suspense fallback={<meshStandardMaterial wireframe={true} />}>
-          <VideoMaterial src={"video/DMX - Where The Hood At (Dirty) (Music Video) HQ.mp4"} />
+          <VideoMaterial src={"video/Cafe Kafica.mp4"} />
         </Suspense>
       </Plane>
       

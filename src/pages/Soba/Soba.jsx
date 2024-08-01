@@ -77,8 +77,8 @@ function Soba(props) {
         
         <Drawer materials={materials} nodes={nodes} />
         <Stolice paintChair={paintChair} setShowArrow={setShowArrow} showLopteS={showLopteS} materials={materials} clicked={clicked} click={click} setShowLopteS={setShowLopteS} setShowTableMa={setShowTableMa} nodes={nodes} />
-        {/* {turnOnTV && ( <Experience turnOnTV={turnOnTV} /> )}
-      {turnOnTV &&  <Music turnOnTV={turnOnTV} buffer={buffer} /> } */}
+         {turnOnTV && ( <Experience turnOnTV={turnOnTV} /> )} 
+        <Music turnOnTV={turnOnTV} /> 
         <Tv turnOnTV={turnOnTV} setTrunOnTV={setTrunOnTV} nodes={nodes} materials={materials} />
         <Biljka nodes={nodes} materials={materials} />
         <Slika1 nodes={nodes} materials={materials} />
@@ -109,6 +109,7 @@ function Soba(props) {
       </group>
 
       <OrbitControls maxDistance={4.1} minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI - Math.PI / 3} />
+      
       </Canvas>
 
     </>
