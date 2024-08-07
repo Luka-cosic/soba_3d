@@ -8,7 +8,7 @@ const Kuca = ({nodes, materials}) => {
 
             <mesh geometry={nodes.Cube011_1.geometry} material={materials.zid}  />
             <mesh geometry={nodes.Cube011_2.geometry} material={materials.plafon} >
-                <meshBasicMaterial color="#804000" />
+                <meshBasicMaterial color="#f2f2f2" />
             </mesh>
             <mesh geometry={nodes.Cube011_3.geometry} material={materials.zid2} >
 

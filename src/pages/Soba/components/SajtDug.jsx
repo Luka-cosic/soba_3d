@@ -1,8 +1,11 @@
 import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const SajtDug = ({nodes}) => {
+
+    const [hovered, setHovered] = useState(false);
     const sajtRef = useRef(null);
     const navigate = useNavigate();
     const handleClick = ()=>{
@@ -11,10 +14,14 @@ const SajtDug = ({nodes}) => {
     }
     useFrame((_, delta) => {
         sajtRef.current.rotation.y += 0.5 * delta
-    })
+    });
+
+    useEffect(() => {
+        document.body.style.cursor = hovered ? 'pointer' : 'auto'
+      }, [hovered]);
     return (
         <>
-        <group ref={sajtRef} onClick={handleClick}>
+        <group ref={sajtRef} onClick={handleClick} onPointerOver={() => setHovered(true)} onPointerOut={() => setHovered(false)} >
             <mesh geometry={nodes.Text002.geometry} material={nodes.Text002.material} position={[-1.514, 1.316, -0.18]} rotation={[Math.PI / 2, 0, 0]} scale={0.423} >
                 <meshBasicMaterial color="white" />
             </mesh>
